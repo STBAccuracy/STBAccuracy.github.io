@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+
+.main_body {
+    margin-top : 70px; /*ABS to ensure circle doesnt go over the header*/
+    text-align: center;
+}
+ 
+h1 {
+    color: green;
+}
+ 
+h3 {
+    color: blue;
+}
+ 
+h1,
+h3 {
+    text-align: center;
+    font-family: sans-serif;
+}
+ 
+.content {
+    text-align: center; /* justify for left align or whatev */
+    font-family: sans-serif;
+    margin-left: 35px;
+    margin-right: 35px;
+    color: white;
+}
+
+
+.circle {
+    height: 90vh;
+    width: 90vh;
+    background-color: rgb(93, 179, 250);
+    border-radius: 50%;
+    display: inline-block;
+
+}
