@@ -31,11 +31,12 @@
     <!-- Header -->
     <div>
         <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#news">About me</a></li>
-            <li><a href="#contact">Journey into Compsci</a></li>
-            <li><a href="#about">Games I play</a></li>
-            <li><a href="#about">Links</a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About_me">About me</a></li>
+            <li><a href="#Journey">Journey into Compsci</a></li>
+            <li><a href="#Games">Games</a></li>
+            <li><a href="#Youtube">Youtube</a></li>
+            <li><a href="#Links">Links</a></li>
         </ul>
     </div>
 
@@ -83,26 +84,30 @@
         <div id = "Youtube" class = "box">
             <h1>My proudest Youtube content</h1>
             <p1>Move over Kurzgesagt, I'm the next big educational youtuber<br></p1>
-            <iframe width="600" height="420"
-            src="https://www.youtube.com/watch?v=ZHLu8jdvsgE&pp=ygULc3RiYWNjdXJhY3k%3D">
-            </iframe> 
+            <p1>Disclaimer: if you are a fellow firefox user you won't get the embeded vid<br></p1>
+            
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZHLu8jdvsgE?si=7fnbaOBOgPPSt6AP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
         </div>
         <br><br>
 
         <div id = "Links" class = "box" style = "background-color: #6cee93;">
             <h1>Check out some relevant (and not so relevant) links and socials</h1>
             <div class = "grid-wrapper">
-                <button class = "button" type = "button">Youtube</button>
+                <button class = "button" type = "button" onclick = "window.open('https://www.youtube.com/@stbaccuracy7951', '_blank');">Youtube</button>
                 <button class = "button" type = "button">Discord</button>
-                <button class = "button" type = "button">Github</button>
-                <button class = "button" type = "button">Linkedin</button>
-                <button class = "button" type = "button">Steam ID</button>
+                <button class = "button" type = "button" onclick = "window.open('https://github.com/STBAccuracy', '_blank')">Github</button>
+                <button class = "button" type = "button" onclick = "window.open('https://au.linkedin.com/in/alex-gao-9a7731257', '_blank')">Linkedin</button>
+                <button class = "button" type = "button" onclick = "window.open('https://steamcommunity.com/profiles/76561198847374943/', '_blank')">Steam ID</button>
                 <button class = "button" type = "button">League ID</button>
                 <button class = "button" type = "button">Genshin ID</button>
-                <button class = "button" type = "button">Other</button>
+                <button class = "button" type = "button" onclick = "window.open('https://github.com/STBAccuracy', '_blank')">Other</button>
             </div>
         </div>
         <br><br>
     </div>
+
+    <script src = "botton.js"></script>
 </body>
 </html>
