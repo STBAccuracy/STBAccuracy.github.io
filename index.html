@@ -1,9 +1,10 @@
 <html>
 <head>
-    <title>Alex's Website</title> <!-- make some better title-->
+    <title>Alex's Website</title> 
     <link rel = "stylesheet" href = "css/header.css" /> 
     <link rel = "stylesheet" href = "css/body.css" /> 
     <link rel = "stylesheet" href = "css/circle.css" /> 
+    <script src = "js/button.js"></script>
 </head>
  
 <body>
@@ -12,21 +13,15 @@
         <div id = "circle_page" onClick = 'click_circle()' class = "circle-parent">
             <span class = "circle">
                 <div class = "text-inside-circle">
-                    <h1>Welcome to Alex's website</h1>
-                    <h3>Click the circle to start</h3>
+                    <h1 style = "margin-top: 170px;">Welcome to Alex's website</h1>
+                    <h3>Click the circle to enter!</h3>
+                    <h3><var>I needed something to tick off the box quota xD</var></h3>
                 </div>
             </span>
         </div>
-
-        <script>
-            function click_circle() {
-            var circle = document.getElementById('circle_page');
-            circle.parentNode.remove();
-            };
-        </script>
     </div>
 
-    <!-- Actual Site-->
+    <!-- === Actual Site === -->
 
     <!-- Header -->
     <div>
@@ -41,6 +36,7 @@
     </div>
 
     <!-- Body -->
+    <!-- Every topic/"subpage is split into separate box divs"-->
     <div class = "main_body">
         <div id = "Home" class = "box">
             <h1>Welcome to Alex's Website</h1>
@@ -57,8 +53,8 @@
             <h1>About me</h1>
             <p1 style = "text-align: left">Name: Alex Gao <br>
                 Age: 19 <br>
-                Address: <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" style = "color:black">(Right here)<br></a>
-                Degree: 1st Year Actuarial Studies/Computer Science
+                Address: <a target="_blank" href="https://www.youtube.com/watch?v=xvFZjo5PgG0" style = "color:black">(Right here)<br></a>
+                Degree: 1st Year Actuarial Studies/Computer Science<br>
                 Hobbies: Video Games, Guitar, Gundam, Competitive Prog/Maths
             </p1>
             
@@ -83,10 +79,7 @@
 
         <div id = "Youtube" class = "box">
             <h1>My proudest Youtube content</h1>
-            <p1>Move over Kurzgesagt, I'm the next big educational youtuber<br></p1>
-            <p1>Disclaimer: if you are a fellow firefox user you won't get the embeded vid<br></p1>
-            
-
+            <p1><var>Move over Kurzgesagt, I'm the next big educational youtuber</var><br></p1>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ZHLu8jdvsgE?si=7fnbaOBOgPPSt6AP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
         </div>
@@ -96,18 +89,16 @@
             <h1>Check out some relevant (and not so relevant) links and socials</h1>
             <div class = "grid-wrapper">
                 <button class = "button" type = "button" onclick = "window.open('https://www.youtube.com/@stbaccuracy7951', '_blank');">Youtube</button>
-                <button class = "button" type = "button">Discord</button>
+                <button class = "button" type = "button" id = "discord" onclick = "discord_id('discord')">Discord</button>
                 <button class = "button" type = "button" onclick = "window.open('https://github.com/STBAccuracy', '_blank')">Github</button>
                 <button class = "button" type = "button" onclick = "window.open('https://au.linkedin.com/in/alex-gao-9a7731257', '_blank')">Linkedin</button>
                 <button class = "button" type = "button" onclick = "window.open('https://steamcommunity.com/profiles/76561198847374943/', '_blank')">Steam ID</button>
-                <button class = "button" type = "button">League ID</button>
-                <button class = "button" type = "button">Genshin ID</button>
-                <button class = "button" type = "button" onclick = "window.open('https://github.com/STBAccuracy', '_blank')">Other</button>
+                <button class = "button" type = "button" id = "league" onclick = "discord_id('league')">League ID</button>
+                <button class = "button" type = "button" id = "genshin" onclick = "discord_id('genshin')">Genshin UID</button>
+                <button class = "button" type = "button" onclick = "window.open('https://en.wikipedia.org/wiki/HTTP_404', '_blank')">Other</button>
             </div>
         </div>
         <br><br>
     </div>
-
-    <script src = "botton.js"></script>
 </body>
 </html>
