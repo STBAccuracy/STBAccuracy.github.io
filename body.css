@@ -1,15 +1,15 @@
 body {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     margin: 0;
 }
 
 .main_body {
     margin-top : 70px; /*ABS to ensure circle doesnt go over the header*/
-    text-align: center;
 }
  
 h1 {
-    color: green;
+    color: rgb(0, 0, 0);
+    font-size: 40;
 }
  
 h3 {
@@ -21,6 +21,10 @@ h3 {
     text-align: center;
     font-family: sans-serif;
 }
+
+p1 {
+    font-size: 28;
+}
  
 .content {
     text-align: center; /* justify for left align or whatev */
@@ -30,12 +34,38 @@ h3 {
     color: white;
 }
 
+.box {
+    display: block;
+    margin: auto;
+    width: 50vw;
+    height: fit-content;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    text-align: center;
+    background-color: #e7e4de;
+}
 
-.circle {
-    height: 90vh;
-    width: 90vh;
-    background-color: rgb(93, 179, 250);
-    border-radius: 50%;
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 25px;
+}
+
+.button {
+    font-size: 22px;
+    height: fit-content;
+    padding: 30px 30px 30px 30px;
     display: inline-block;
-
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: rgb(26, 142, 238);
+    background-color: #e7e4de;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 9px rgb(16, 135, 233);
 }

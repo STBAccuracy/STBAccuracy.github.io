@@ -1,22 +1,108 @@
 <html>
 <head>
-    <title>Alex Gao</title> <!-- make some better title-->
+    <title>Alex's Website</title> <!-- make some better title-->
     <link rel = "stylesheet" href = "header.css" /> 
     <link rel = "stylesheet" href = "body.css" /> 
+    <link rel = "stylesheet" href = "circle.css" /> 
 </head>
  
 <body>
+    <!-- Circle intro webpage gimmick-->
+    <div class = "overlay">
+        <div id = "circle_page" onClick = 'click_circle()' class = "circle-parent">
+            <span class = "circle">
+                <div class = "text-inside-circle">
+                    <h1>Welcome to Alex's website</h1>
+                    <h3>Click the circle to start</h3>
+                </div>
+            </span>
+        </div>
+
+        <script>
+            function click_circle() {
+            var circle = document.getElementById('circle_page');
+            circle.parentNode.remove();
+            };
+        </script>
+    </div>
+
+    <!-- Actual Site-->
+
+    <!-- Header -->
     <div>
         <ul>
             <li><a class="active" href="#home">Home</a></li>
             <li><a href="#news">About me</a></li>
-            <li><a href="#contact">Stuff</a></li>
-            <li><a href="#about">Socials</a></li>
+            <li><a href="#contact">Journey into Compsci</a></li>
+            <li><a href="#about">Games I play</a></li>
+            <li><a href="#about">Links</a></li>
         </ul>
     </div>
-    <!-- Make it space circle themed-->
+
+    <!-- Body -->
     <div class = "main_body">
-        <span class = "circle"></span>
+        <div id = "Home" class = "box">
+            <h1>Welcome to Alex's Website</h1>
+            <p1>Hi, I'm Alex, a Computer Science student with a keen interest in <br>mathematics 
+                and programming!<br></p1>
+            <p1>Scroll through the website to find out more about me and <br>
+                all the secrets the website has! <br>
+                (There is a fair bit!)</p1>
+            <!-- This is a bit like Monkey GO Happy if you played it on CoolMathsGames-->
+        </div>
+        <br><br>
+
+        <div id = "About_me" class = "box" style = "background-color: #6cee93;">
+            <h1>About me</h1>
+            <p1 style = "text-align: left">Name: Alex Gao <br>
+                Age: 19 <br>
+                Address: <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" style = "color:black">(Right here)<br></a>
+                Degree: 1st Year Actuarial Studies/Computer Science
+                Hobbies: Video Games, Guitar, Gundam, Competitive Prog/Maths
+            </p1>
+            
+        </div>
+        <br><br>
+
+        <div id = "Journey" class = "box">
+            <h1>My Journey into Computer Science</h1>
+            <p1>I started learning what programming what when I was 10 years old, my mum gifted me a book on how to Program in Java... 
+                Needless to say I only started learning how to program in High school during the Covid lockdown when UNSW was running an online high school programming course (o7 HS1917).
+                This dip into learning how to program drove me to take technology and programming courses from school which eventually led me to participate in the National Computer Science School 
+                in the summer of 2022 and ultimately influenced my decision to study Computer Science at university today.
+            </p1>
+        </div>
+        <br><br>
+
+        <div id = "Games" class = "box" style = "background-color: #6cee93;">
+            <h1>Games I play</h1>
+            <p1>Hover over for some game footage and click for some!<br></p1>
+        </div>
+        <br><br>
+
+        <div id = "Youtube" class = "box">
+            <h1>My proudest Youtube content</h1>
+            <p1>Move over Kurzgesagt, I'm the next big educational youtuber<br></p1>
+            <iframe width="600" height="420"
+            src="https://www.youtube.com/watch?v=ZHLu8jdvsgE&pp=ygULc3RiYWNjdXJhY3k%3D">
+            </iframe> 
+        </div>
+        <br><br>
+
+        <div id = "Links" class = "box" style = "background-color: #6cee93;">
+            <h1>Check out some relevant (and not so relevant) links and socials</h1>
+            <div class = "grid-wrapper">
+                <button class = "button" type = "button">Youtube</button>
+                <button class = "button" type = "button">Discord</button>
+                <button class = "button" type = "button">Github</button>
+                <button class = "button" type = "button">Linkedin</button>
+                <button class = "button" type = "button">Steam ID</button>
+                <button class = "button" type = "button">League ID</button>
+                <button class = "button" type = "button">Genshin ID</button>
+                <button class = "button" type = "button">Other</button>
+            </div>
+        </div>
+        <br><br>
     </div>
 </body>
 </html>
