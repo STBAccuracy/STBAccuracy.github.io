@@ -1,0 +1,7 @@
+The following are the locations of the circles
+
+1) The circle button on the header, click it once to obtain it.
+2) Absolute coordinate (top: 400px, left: 500px)
+3) Absolute coordinate (top: 3100px, left: 700px)
+4) Absolute coordinate (top: 2000px, left: 10px)
+5) Clicking the other button in the links section will make it a circle button. Click it again to obtain it.
