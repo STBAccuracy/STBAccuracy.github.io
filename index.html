@@ -13,7 +13,7 @@
         <div id = "circle_page" onClick = 'click_circle()' class = "circle-parent">
             <span class = "circle">
                 <div class = "text-inside-circle">
-                    <h1 style = "margin-top: 220px; font-size: 56;">Welcome to Alex's website</h1>
+                    <h1 style = "margin-top: 220px; font-size: 52;">Welcome to Alex's website</h1>
                     <h3 style = "font-size: 32;">Click the circle to enter!</h3>
                     <h3 style = "font-size: 32;"><var>I needed something to tick off the box quota xD</var></h3>
                 </div>
@@ -36,15 +36,16 @@
     </div>
 
     <!-- Body -->
-    <!-- Every topic/"subpage is split into separate box divs"-->
+    <!-- Every topic/"subpage" is split into separate box "divs"-->
     <div class = "main_body">
         <div id = "Home" class = "box">
             <h1>Welcome to Alex's Website</h1>
             <p1>Hi, I'm Alex, a Computer Science student with a keen interest in <br>mathematics 
                 and programming!<br></p1>
             <p1>Scroll through the website to find out more about me and <br>
-                all the secrets the website has! <br>
-                (There is a fair bit!)</p1>
+                find all 5 circles on the website!<br></p1>
+            <p1 style = "font-size: 20;"><var>Click the button below to check if you got all the circles!<br></var></p1>
+            <button class = "button" style = "box-shadow: 0 0 ;color:black;background-color: #48504a;">Circle check</button>
             <!-- This is a bit like Monkey GO Happy if you played it on CoolMathsGames-->
         </div>
         <br><br>
@@ -72,8 +73,34 @@
         <br><br>
 
         <div id = "Games" class = "box" style = "background-color: #6cee93;">
-            <h1>🎮Games I play🕹️</h1>
-            <p1>Hover over for some game footage and click for some!<br></p1>
+            <h1>🎮Games and Hobbies🕹️</h1>
+            <p1>Hover over for some game/hobby footage!<br></p1>
+            <div class = "video_grid_wrapper">
+                <div class = "video_button" onmouseover = "gif_appear(this)" onmouseout = "gif_disappear(this)">
+                    <img class = "gif_class" src = "gif/bg3.gif">
+                    <h1 class = "gif_title">Baldur's Gate 3</h1>
+                </div>
+                <div class = "video_button" onmouseover = "gif_appear(this)" onmouseout = "gif_disappear(this)">
+                    <img class = "gif_class" src = "gif/tft.gif">
+                    <h1 class = "gif_title">Team Fight Tactics</h1>
+                </div>
+                <div class = "video_button" onmouseover = "gif_appear(this)" onmouseout = "gif_disappear(this)">
+                    <img class = "gif_class" src = "gif/genshin.gif">
+                    <h1 class = "gif_title">Genshin Impact</h1>
+                </div>
+                <div class = "video_button" onmouseover = "gif_appear(this)" onmouseout = "gif_disappear(this)">
+                    <img class = "gif_class" src = "gif/civ6.gif">
+                    <h1 class = "gif_title">Civilization 6</h1>
+                </div>
+                <div class = "video_button" onmouseover = "gif_appear(this)" onmouseout = "gif_disappear(this)">
+                    <img class = "gif_class" src = "gif/cooking.gif">
+                    <h1 class = "gif_title">Cooking</h1>
+                </div>
+                <div class = "video_button" onmouseover = "gif_appear(this)" onmouseout = "gif_disappear(this)">
+                    <img class = "gif_class" src = "gif/gundam.gif">
+                    <h1 class = "gif_title">Gundam</h1>
+                </div>
+            </div>
         </div>
         <br><br>
 
@@ -88,14 +115,14 @@
         <div id = "Links" class = "box" style = "background-color: #6cee93;">
             <h1>Check out some relevant (and not so relevant) links and socials</h1>
             <div class = "grid-wrapper">
-                <button class = "button" type = "button" onclick = "window.open('https://www.youtube.com/@stbaccuracy7951', '_blank');">Youtube</button>
-                <button class = "button" type = "button" id = "discord" onclick = "discord_id('discord')">Discord</button>
-                <button class = "button" type = "button" onclick = "window.open('https://github.com/STBAccuracy', '_blank')">Github</button>
-                <button class = "button" type = "button" onclick = "window.open('https://au.linkedin.com/in/alex-gao-9a7731257', '_blank')">Linkedin</button>
-                <button class = "button" type = "button" onclick = "window.open('https://steamcommunity.com/profiles/76561198847374943/', '_blank')">Steam ID</button>
-                <button class = "button" type = "button" id = "league" onclick = "discord_id('league')">League ID</button>
-                <button class = "button" type = "button" id = "genshin" onclick = "discord_id('genshin')">Genshin UID</button>
-                <button class = "button" type = "button" onclick = "window.open('https://en.wikipedia.org/wiki/HTTP_404', '_blank')">Other</button>
+                <button class = "button" type = "button" onclick = "link_click('link', 'youtube')">Youtube</button>
+                <button class = "button" type = "button" id = "discord" onclick = "link_click('clipboard', 'discord')">Discord</button>
+                <button class = "button" type = "button" onclick = "link_click('link', 'github')">Github</button>
+                <button class = "button" type = "button" onclick = "link_click('link', 'linkedin')">Linkedin</button>
+                <button class = "button" type = "button" onclick = "link_click('link', 'steam')">Steam ID</button>
+                <button class = "button" type = "button" id = "league" onclick = "link_click('clipboard', 'league')">League ID</button>
+                <button class = "button" type = "button" id = "genshin" onclick = "link_click('clipboard', 'genshin')">Genshin UID</button>
+                <button class = "button" type = "button" onclick = "link_click('link', 'other')">Other</button>
             </div>
         </div>
         <br><br>
