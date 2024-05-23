@@ -1,4 +1,6 @@
 // Javascript of the site.
+// Written by Alex Gao
+// Its great programming stuff like python classes
 
 // === Javascript for the circle intro gimmick ===
 function click_circle() {
@@ -6,13 +8,49 @@ function click_circle() {
     circle.parentNode.remove();
     };
 
-// === Javascript for onmouse interacrtivity ===
+
+// === All functions related to do with circle secrets ===
+var circles_found = 0;
+
+function pop_circle(element) {
+    element.remove();
+    circles_found++;
+};
+
+// Function to change the other button to a "circle" button
+function update_circle_button(element) {
+    element.setAttribute( "onClick", "javascript: pop_circle(this);" );
+    element.innerHTML  = "Circle";
+    element.style.borderRadius = "100px";
+};
+
+// Function that checks if all circles were found
+function circle_check(element) {
+    if (circles_found < 5) {
+        // Not all circles are found
+        element.innerHTML  = "Not all circles found!";
+        setTimeout(function() {
+            element.innerHTML = "Circle check";
+          }, 1000); 
+    } else {
+        element.innerHTML  = "All circles found!";
+        setTimeout(function() {
+            element.innerHTML = "Congratulations!";
+          }, 1000); 
+          setTimeout(function() {
+            element.innerHTML = "Circle check";
+          }, 2000); 
+    }
+};
+
+
+// === Javascript for onmouse interacrtivity w/ games ===
 function gif_appear(parent) {
     var image = parent.getElementsByTagName('IMG');
     image[0].style.opacity = 1;
 
     var text = parent.getElementsByTagName('H1');
-    text[0].style.color = "white";
+    text[0].style.color = "#ffb703";
 };
 
 function gif_disappear(parent) {
@@ -20,8 +58,9 @@ function gif_disappear(parent) {
     image[0].style.opacity = 0;
 
     var text = parent.getElementsByTagName('H1');
-    text[0].style.color = "black";
+    text[0].style.color = "#fb8500";
 };
+
 
 // === Javascript for link buttons ===
 function link_click(response_type, id_type) {
@@ -37,8 +76,8 @@ function link_click(response_type, id_type) {
             case "linkedin":
                 window.open('https://au.linkedin.com/in/alex-gao-9a7731257', '_blank')
                 break;
-            case "steam":
-                window.open('https://steamcommunity.com/profiles/76561198847374943/', '_blank')
+            case "spotify":
+                window.open('https://open.spotify.com/user/25mpoefqitu55yk3dvdcxvaza?si=42f46633e079450e', '_blank')
                 break;
             case "other":
                 window.open('https://en.wikipedia.org/wiki/HTTP_404', '_blank')
@@ -68,11 +107,4 @@ function link_click(response_type, id_type) {
     
 };
 
-// === All functions related to do with circle secrets ===
-var circles_found = 0;
 
-function pop_circle(element_id) {
-    var circle = document.getElementById(element_id);
-    circle.remove();
-    circles_found++;
-    };
