@@ -132,7 +132,7 @@ p1 {
 }
 
 .button {
-    font-size: 22px;
+    font-size: 24px;
     height: fit-content;
     padding: 30px 30px 30px 30px;
     display: inline-block;
@@ -143,7 +143,7 @@ p1 {
     color: #fb8500;
     background-color: #8ecae6;
     border: none;
-    border-radius: 25px;
+    border-radius: 30px;
     box-shadow: 0 9px #219ebc;
 }
 
